@@ -20,7 +20,7 @@ AddEventHandler("tads:timeanddatesync", function(time,date)
 					
 					newDate.day = newDate.day + 1
 					if newDate.day > GetDaysInCurrentMonth() then
-						newDate.day = 0
+						newDate.day = 1
 						
 						newDate.month = newDate.month + 1
 						if newDate.month > 11 then
