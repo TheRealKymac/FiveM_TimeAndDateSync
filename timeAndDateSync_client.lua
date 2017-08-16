@@ -27,7 +27,7 @@ AddEventHandler("tads:timeanddatesync", function(time,date)
 							newDate.month = 0
 							
 							newDate.year = newDate.year + 1
-							 leapYear = leapYear + 1
+							leapYear = leapYear + 1
 							if leapYear > 3 then
 								leapYear = 0
 							end
