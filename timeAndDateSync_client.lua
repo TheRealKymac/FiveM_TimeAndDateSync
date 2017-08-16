@@ -27,7 +27,7 @@ AddEventHandler("tads:timeanddatesync", function(time,date)
 							newDate.month = 0
 							
 							newDate.year = newDate.year + 1
-							leapYear + 1
+							 leapYear = leapYear + 1
 							if leapYear > 3 then
 								leapYear = 0
 							end
@@ -50,9 +50,9 @@ function GetDaysInCurrentMonth()
 		else
 			return 28
 		end
-	elseif month == 3 or month == 5 or month == 8 or month == 10
+	elseif month == 3 or month == 5 or month == 8 or month == 10 then
 		return 30
-	elseif month == 0 or month == 2 or month == 4 or month == 6 or month == 7 or month == 9 or month == 11
+	elseif month == 0 or month == 2 or month == 4 or month == 6 or month == 7 or month == 9 or month == 11 then
 		return 31
 	end
 end
